@@ -74,7 +74,7 @@ dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
 const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 
-loader.load("models/man.glb", (gltf) => {
+loader.load("./models/man.glb", (gltf) => {
   const model = gltf.scene;
   model.updateMatrixWorld(true);
 
